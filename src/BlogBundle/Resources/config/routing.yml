@@ -1,0 +1,96 @@
+login:
+    path:     /login
+    defaults: { _controller: BlogBundle:User:login }
+    
+login_check:
+    path:     /login_check
+    
+logout:
+    path:     /logout
+
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:Default:index }
+    
+blog_layout:
+    path:     /layout
+    defaults: { _controller: BlogBundle:Default:index2 }
+    
+    
+blog_many:
+    path:     /many
+    defaults: { _controller: BlogBundle:Default:manyToOne }
+    
+blog_many2:
+    path:     /many2
+    defaults: { _controller: BlogBundle:Default:manyToOne2 }
+    
+blog_many3:
+    path:     /many3
+    defaults: { _controller: BlogBundle:Default:manyToOne3 }
+    
+blog_many4:
+    path:     /many4
+    defaults: { _controller: BlogBundle:Default:manyToOne4 }
+
+blog_add_tag:
+    path:     /tags/add
+    defaults: { _controller: BlogBundle:Tag:add }
+    
+blog_add2_tag:
+    path:     /tags/add2
+    defaults: { _controller: BlogBundle:Tag:add2 }
+    
+blog_index_tags:
+    path:     /tags
+    defaults: { _controller: BlogBundle:Tag:index }
+
+blog_delete_tag:
+    path:     /tags/delete/{id}
+    defaults: { _controller: BlogBundle:Tag:delete }
+    
+blog_index_category:
+    path:     /category
+    defaults: { _controller: BlogBundle:Category:index }
+    
+blog_add_category:
+    path:     /category/add
+    defaults: { _controller: BlogBundle:Category:add }
+    
+blog_delete_category:
+    path:     /category/delete/{id}
+    defaults: { _controller: BlogBundle:Category:delete }
+    
+blog_edit_category:
+    path:     /category/edit/{id}
+    defaults: { _controller: BlogBundle:Category:edit }
+
+blog_index_entry:
+    path:     /entry
+    defaults: { _controller: BlogBundle:Entry:index }
+    
+blog_add_entry:
+    path:     /entry/add
+    defaults: { _controller: BlogBundle:Entry:add }
+    
+blog_delete_entry:
+    path:     /entry/delete/{id}
+    defaults: { _controller: BlogBundle:Entry:delete }
+    
+blog_edit_entry:
+    path:     /entry/edit/{id}
+    defaults: { _controller: BlogBundle:Entry:edit }
+    
+borrar:
+    path:     /borrar
+    defaults: { _controller: BlogBundle:Tag:borrar } 
+    
+access_denied:
+    path:     /error
+    defaults: { _controller: BlogBundle:Default:denied } 
+    
+entradas_list:
+    path: /pruebas/entradas
+    defaults: { _controller: BlogBundle:Entry:entradas}
+
+    

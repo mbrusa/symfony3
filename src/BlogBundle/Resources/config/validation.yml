@@ -1,0 +1,27 @@
+BlogBundle\Entity\Tag:
+    properties:
+        name:
+            - NotBlank: {message: "El titulo no debe estar en blanco"}
+            - Length:
+                min: 2
+                minMessage: "Debe tener mas de 2 caracteres"
+                
+        description:
+            - NotBlank: {message: "No debe estar en blanco"}
+            - Length:
+                min: 6 
+                minMessage: "Debe tener mas de 6 caracteres"
+  
+BlogBundle\Entity\Category:
+    properties:
+        name:
+            - NotBlank: {message: "El titulo no debe estar en blanco"}
+            - Length:
+                min: 2
+                minMessage: "Debe tener mas de 2 caracteres"
+                
+        description:
+            - NotBlank: {message: "No debe estar en blanco"}
+            - Length:
+                min: 6 
+                minMessage: "Debe tener mas de 6 caracteres"

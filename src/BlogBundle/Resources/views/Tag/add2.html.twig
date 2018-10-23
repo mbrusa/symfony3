@@ -1,0 +1,29 @@
+{% extends "BlogBundle::layout.html.twig" %}
+
+{% block content %}
+    <div></div>
+    <div class="col-lg-6">
+
+
+
+        <h1> Añadir Tag! </h1>
+
+        {{form_start(form)}}
+
+        {{form_end(form)}}
+    </div>
+
+    <div class="clearfix">
+
+    </div>
+    <script>
+        $('#sandbox-container div').datepicker({
+            weekStart: 2,
+            maxViewMode: 0,
+            language: "es",
+            datesDisabled: ['10/06/2018', '10/21/2018']
+        });
+    </script>
+    {% endblock %}
+
+

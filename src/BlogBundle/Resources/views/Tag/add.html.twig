@@ -1,0 +1,31 @@
+{% extends "BlogBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <div class="col-lg-6">
+        {% if(form.name.vars.errors) is not empty %}
+    
+        {% set foo = form.name.vars.errors|split(':') %}
+        <div class="alert alert-warning">El nombre {{foo.1}}</div>
+        {% endif %}
+        
+        
+        <h1> Añadir Tag! </h1>
+
+        {{form_start(form)}}
+        <label>Nombre:</label>
+        {{form_widget(form.name)}}
+
+        <label>Descripción:</label>
+        {{form_widget(form.description)}}
+        
+        {{form_end(form)}}
+    </div>
+    
+    <div class="clearfix">
+
+    </div>
+
+{% endblock %}
+
+
