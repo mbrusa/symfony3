@@ -50,12 +50,12 @@ class UserController extends Controller
 					$em->persist($user);
 					$flush = $em->flush();
 					if($flush==null){
-						$status = "El usuario se ha creado con éxito";
+						$status = "El usuario se ha creado";
 					}else{
 						$status = "No te has registrado correctamente";
 					}
 				}else{
-					$status = "El usuario ya existe!!!";
+					$status = "¡¡¡El usuario ya existe!!!";
 				}
 			}else{
 				$status = "No te has registrado correctamente";
